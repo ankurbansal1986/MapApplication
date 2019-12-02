@@ -35,7 +35,7 @@ class VehicleListViewController: UIViewController {
     
     //MARK:- Extension for table view data source and delegate methods
     //MARK:-
-    extension VehicleListViewController: UITableViewDelegate, UITableViewDataSource, Navigation  {
+    extension VehicleListViewController: UITableViewDelegate, UITableViewDataSource  {
         
         func numberOfSections(in tableView: UITableView) -> Int {
             return viewModel.numberOfSection
@@ -57,7 +57,7 @@ class VehicleListViewController: UIViewController {
         
         func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
             let vehicle:MapModel = viewModel.vehicles![indexPath.row]
-            showVehicleMapViewController(vehicle: vehicle)
+            AppNavigationManager.shared.showVehicleMapViewController(vehicle: vehicle)
         }
     }
     

@@ -39,8 +39,8 @@ class VehicleTableViewCell: UITableViewCell {
             return
         }
         logoImageView.downloaded(from: mapModel.carImageUrl ?? "")
-        modelNameLabel.text = mapModel.modelName
-        groupLabel.text = mapModel.group
+        modelNameLabel.text = mapModel.modelName?.capitalized
+        groupLabel.text = mapModel.group?.capitalized
         licensePlateLabel.text = mapModel.licensePlate
     }
 

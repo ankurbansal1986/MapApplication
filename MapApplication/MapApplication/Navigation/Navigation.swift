@@ -8,19 +8,42 @@
 
 import Foundation
 import UIKit
-protocol Navigation{
+
+class AppNavigationManager {
     
-    func showVehicleMapViewController(vehicle:MapModel)
+    static let shared = AppNavigationManager()
     
+    private init() {}
+    
+    var mainNavigationController: UINavigationController? {
+        return AppDelegate.shared.window?.rootViewController as? UINavigationController
+    }
 }
 
-extension Navigation where Self:UIViewController{
+extension AppNavigationManager {
+    
     func showVehicleMapViewController(vehicle:MapModel){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vehicleMapViewController:VehicleMapViewController = storyboard.instantiateViewController(withIdentifier: "VehicleMapViewController") as! VehicleMapViewController
         vehicleMapViewController.viewModel.vehicle = vehicle
-        self.navigationController?.pushViewController(vehicleMapViewController, animated: true)
+        self.mainNavigationController?.pushViewController(vehicleMapViewController, animated: true)
         
     }
     
+    
 }
+
+
+extension AppNavigationManager {
+    func startLoading() {
+        PKLoader.shared.startAnimating()
+    }
+    
+    func stopLoading() {
+        PKLoader.shared.stopAnimating()
+    }
+}
+
+
+
+

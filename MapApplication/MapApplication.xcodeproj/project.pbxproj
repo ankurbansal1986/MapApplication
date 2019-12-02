@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A0F4ABE23951848000C609F /* PKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AB523951848000C609F /* PKIndicatorView.swift */; };
+		4A0F4ABF23951848000C609F /* PKBallRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AB623951848000C609F /* PKBallRotateChaseAnimation.swift */; };
+		4A0F4AC023951848000C609F /* PKLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AB723951848000C609F /* PKLoader.swift */; };
+		4A0F4AC123951848000C609F /* PKBallSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AB823951848000C609F /* PKBallSpinFadeAnimation.swift */; };
+		4A0F4AC223951848000C609F /* PKActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AB923951848000C609F /* PKActivityIndicatorAnimation.swift */; };
+		4A0F4AC323951848000C609F /* PKIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4ABA23951848000C609F /* PKIndicatorShape.swift */; };
+		4A0F4AC423951848000C609F /* PKLoaderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4ABB23951848000C609F /* PKLoaderSettings.swift */; };
+		4A0F4AC523951848000C609F /* PKCircleStrokeSpinAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4ABC23951848000C609F /* PKCircleStrokeSpinAnimation.swift */; };
+		4A0F4AC623951848000C609F /* PKBallClipRotateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4ABD23951848000C609F /* PKBallClipRotateAnimation.swift */; };
 		89D918192394CB1B00862EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918182394CB1B00862EFF /* AppDelegate.swift */; };
 		89D9181B2394CB1B00862EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9181A2394CB1B00862EFF /* ViewController.swift */; };
 		89D9181E2394CB1B00862EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9181C2394CB1B00862EFF /* Main.storyboard */; };
@@ -46,6 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A0F4AB523951848000C609F /* PKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorView.swift; sourceTree = "<group>"; };
+		4A0F4AB623951848000C609F /* PKBallRotateChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallRotateChaseAnimation.swift; sourceTree = "<group>"; };
+		4A0F4AB723951848000C609F /* PKLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoader.swift; sourceTree = "<group>"; };
+		4A0F4AB823951848000C609F /* PKBallSpinFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallSpinFadeAnimation.swift; sourceTree = "<group>"; };
+		4A0F4AB923951848000C609F /* PKActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
+		4A0F4ABA23951848000C609F /* PKIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorShape.swift; sourceTree = "<group>"; };
+		4A0F4ABB23951848000C609F /* PKLoaderSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoaderSettings.swift; sourceTree = "<group>"; };
+		4A0F4ABC23951848000C609F /* PKCircleStrokeSpinAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCircleStrokeSpinAnimation.swift; sourceTree = "<group>"; };
+		4A0F4ABD23951848000C609F /* PKBallClipRotateAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallClipRotateAnimation.swift; sourceTree = "<group>"; };
 		89D918152394CB1B00862EFF /* MapApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D918182394CB1B00862EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D9181A2394CB1B00862EFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +116,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A0F4AB423951848000C609F /* PKLoader */ = {
+			isa = PBXGroup;
+			children = (
+				4A0F4AB523951848000C609F /* PKIndicatorView.swift */,
+				4A0F4AB623951848000C609F /* PKBallRotateChaseAnimation.swift */,
+				4A0F4AB723951848000C609F /* PKLoader.swift */,
+				4A0F4AB823951848000C609F /* PKBallSpinFadeAnimation.swift */,
+				4A0F4AB923951848000C609F /* PKActivityIndicatorAnimation.swift */,
+				4A0F4ABA23951848000C609F /* PKIndicatorShape.swift */,
+				4A0F4ABB23951848000C609F /* PKLoaderSettings.swift */,
+				4A0F4ABC23951848000C609F /* PKCircleStrokeSpinAnimation.swift */,
+				4A0F4ABD23951848000C609F /* PKBallClipRotateAnimation.swift */,
+			);
+			path = PKLoader;
+			sourceTree = "<group>";
+		};
 		89D9180C2394CB1B00862EFF = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +230,7 @@
 		89D918632395107800862EFF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				4A0F4AB423951848000C609F /* PKLoader */,
 				89D918642395107800862EFF /* AppGlobal.swift */,
 			);
 			path = Helper;
@@ -334,18 +369,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				89D9181B2394CB1B00862EFF /* ViewController.swift in Sources */,
+				4A0F4AC123951848000C609F /* PKBallSpinFadeAnimation.swift in Sources */,
+				4A0F4AC523951848000C609F /* PKCircleStrokeSpinAnimation.swift in Sources */,
 				89D9184A2394CE5B00862EFF /* MapModel.swift in Sources */,
 				89D918512394D6B200862EFF /* Service.swift in Sources */,
 				89D91862239506C700862EFF /* Navigation.swift in Sources */,
 				89D918552394E09100862EFF /* VehicleListViewController.swift in Sources */,
+				4A0F4ABF23951848000C609F /* PKBallRotateChaseAnimation.swift in Sources */,
 				89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */,
+				4A0F4AC423951848000C609F /* PKLoaderSettings.swift in Sources */,
 				89D918572394E0A500862EFF /* VehicleMapViewController.swift in Sources */,
 				89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */,
+				4A0F4AC323951848000C609F /* PKIndicatorShape.swift in Sources */,
 				89D918652395108100862EFF /* AppGlobal.swift in Sources */,
 				89D918592394E0CA00862EFF /* VehicleListViewModel.swift in Sources */,
+				4A0F4AC623951848000C609F /* PKBallClipRotateAnimation.swift in Sources */,
+				4A0F4AC023951848000C609F /* PKLoader.swift in Sources */,
 				89D918522394D6B200862EFF /* ServiceConstants.swift in Sources */,
 				89D918192394CB1B00862EFF /* AppDelegate.swift in Sources */,
 				89D91867239512CD00862EFF /* VehicleAnnotation.swift in Sources */,
+				4A0F4AC223951848000C609F /* PKActivityIndicatorAnimation.swift in Sources */,
+				4A0F4ABE23951848000C609F /* PKIndicatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
