@@ -7,16 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4A0F4AA023950E34000C609F /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4A9F23950E34000C609F /* AppGlobal.swift */; };
-		4A0F4AAB2395119F000C609F /* PKIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA22395119E000C609F /* PKIndicatorView.swift */; };
-		4A0F4AAC2395119F000C609F /* PKBallRotateChaseAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA32395119E000C609F /* PKBallRotateChaseAnimation.swift */; };
-		4A0F4AAD2395119F000C609F /* PKLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA42395119E000C609F /* PKLoader.swift */; };
-		4A0F4AAE2395119F000C609F /* PKBallSpinFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA52395119E000C609F /* PKBallSpinFadeAnimation.swift */; };
-		4A0F4AAF2395119F000C609F /* PKActivityIndicatorAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA62395119E000C609F /* PKActivityIndicatorAnimation.swift */; };
-		4A0F4AB02395119F000C609F /* PKIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA72395119E000C609F /* PKIndicatorShape.swift */; };
-		4A0F4AB12395119F000C609F /* PKLoaderSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA82395119E000C609F /* PKLoaderSettings.swift */; };
-		4A0F4AB22395119F000C609F /* PKCircleStrokeSpinAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AA92395119E000C609F /* PKCircleStrokeSpinAnimation.swift */; };
-		4A0F4AB32395119F000C609F /* PKBallClipRotateAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F4AAA2395119E000C609F /* PKBallClipRotateAnimation.swift */; };
 		89D918192394CB1B00862EFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918182394CB1B00862EFF /* AppDelegate.swift */; };
 		89D9181B2394CB1B00862EFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9181A2394CB1B00862EFF /* ViewController.swift */; };
 		89D9181E2394CB1B00862EFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89D9181C2394CB1B00862EFF /* Main.storyboard */; };
@@ -34,6 +24,8 @@
 		89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */; };
 		89D9185F2394E34C00862EFF /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */; };
 		89D91862239506C700862EFF /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D91861239506C700862EFF /* Navigation.swift */; };
+		89D918652395108100862EFF /* AppGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918642395107800862EFF /* AppGlobal.swift */; };
+		89D91867239512CD00862EFF /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D91866239512CD00862EFF /* VehicleAnnotation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,16 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4A0F4A9F23950E34000C609F /* AppGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobal.swift; sourceTree = "<group>"; };
-		4A0F4AA22395119E000C609F /* PKIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorView.swift; sourceTree = "<group>"; };
-		4A0F4AA32395119E000C609F /* PKBallRotateChaseAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallRotateChaseAnimation.swift; sourceTree = "<group>"; };
-		4A0F4AA42395119E000C609F /* PKLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoader.swift; sourceTree = "<group>"; };
-		4A0F4AA52395119E000C609F /* PKBallSpinFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallSpinFadeAnimation.swift; sourceTree = "<group>"; };
-		4A0F4AA62395119E000C609F /* PKActivityIndicatorAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKActivityIndicatorAnimation.swift; sourceTree = "<group>"; };
-		4A0F4AA72395119E000C609F /* PKIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKIndicatorShape.swift; sourceTree = "<group>"; };
-		4A0F4AA82395119E000C609F /* PKLoaderSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKLoaderSettings.swift; sourceTree = "<group>"; };
-		4A0F4AA92395119E000C609F /* PKCircleStrokeSpinAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCircleStrokeSpinAnimation.swift; sourceTree = "<group>"; };
-		4A0F4AAA2395119E000C609F /* PKBallClipRotateAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKBallClipRotateAnimation.swift; sourceTree = "<group>"; };
 		89D918152394CB1B00862EFF /* MapApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D918182394CB1B00862EFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89D9181A2394CB1B00862EFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +69,8 @@
 		89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
 		89D91861239506C700862EFF /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		89D918642395107800862EFF /* AppGlobal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppGlobal.swift; sourceTree = "<group>"; };
+		89D91866239512CD00862EFF /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,31 +98,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4A0F4A9E23950E34000C609F /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				4A0F4AA12395119E000C609F /* PKLoader */,
-				4A0F4A9F23950E34000C609F /* AppGlobal.swift */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		4A0F4AA12395119E000C609F /* PKLoader */ = {
-			isa = PBXGroup;
-			children = (
-				4A0F4AA22395119E000C609F /* PKIndicatorView.swift */,
-				4A0F4AA32395119E000C609F /* PKBallRotateChaseAnimation.swift */,
-				4A0F4AA42395119E000C609F /* PKLoader.swift */,
-				4A0F4AA52395119E000C609F /* PKBallSpinFadeAnimation.swift */,
-				4A0F4AA62395119E000C609F /* PKActivityIndicatorAnimation.swift */,
-				4A0F4AA72395119E000C609F /* PKIndicatorShape.swift */,
-				4A0F4AA82395119E000C609F /* PKLoaderSettings.swift */,
-				4A0F4AA92395119E000C609F /* PKCircleStrokeSpinAnimation.swift */,
-				4A0F4AAA2395119E000C609F /* PKBallClipRotateAnimation.swift */,
-			);
-			path = PKLoader;
-			sourceTree = "<group>";
-		};
 		89D9180C2394CB1B00862EFF = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +121,7 @@
 		89D918172394CB1B00862EFF /* MapApplication */ = {
 			isa = PBXGroup;
 			children = (
-				4A0F4A9E23950E34000C609F /* Helper */,
+				89D918632395107800862EFF /* Helper */,
 				89D918602395068300862EFF /* Navigation */,
 				89D9184B2394D46500862EFF /* Networking */,
 				89D918472394CE0400862EFF /* Models */,
@@ -199,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				89D918492394CE5B00862EFF /* MapModel.swift */,
+				89D91866239512CD00862EFF /* VehicleAnnotation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +191,14 @@
 				89D91861239506C700862EFF /* Navigation.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		89D918632395107800862EFF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				89D918642395107800862EFF /* AppGlobal.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,19 +341,11 @@
 				89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */,
 				89D918572394E0A500862EFF /* VehicleMapViewController.swift in Sources */,
 				89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */,
-				4A0F4AAE2395119F000C609F /* PKBallSpinFadeAnimation.swift in Sources */,
-				4A0F4AAF2395119F000C609F /* PKActivityIndicatorAnimation.swift in Sources */,
-				4A0F4AAB2395119F000C609F /* PKIndicatorView.swift in Sources */,
-				4A0F4AB32395119F000C609F /* PKBallClipRotateAnimation.swift in Sources */,
-				4A0F4AB12395119F000C609F /* PKLoaderSettings.swift in Sources */,
-				4A0F4AA023950E34000C609F /* AppGlobal.swift in Sources */,
-				4A0F4AB02395119F000C609F /* PKIndicatorShape.swift in Sources */,
-				4A0F4AAC2395119F000C609F /* PKBallRotateChaseAnimation.swift in Sources */,
-				4A0F4AAD2395119F000C609F /* PKLoader.swift in Sources */,
+				89D918652395108100862EFF /* AppGlobal.swift in Sources */,
 				89D918592394E0CA00862EFF /* VehicleListViewModel.swift in Sources */,
-				4A0F4AB22395119F000C609F /* PKCircleStrokeSpinAnimation.swift in Sources */,
 				89D918522394D6B200862EFF /* ServiceConstants.swift in Sources */,
 				89D918192394CB1B00862EFF /* AppDelegate.swift in Sources */,
+				89D91867239512CD00862EFF /* VehicleAnnotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
