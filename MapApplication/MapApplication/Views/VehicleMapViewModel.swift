@@ -17,7 +17,7 @@ class VehicleMapViewModel{
     
     var vehicleAnnotation:VehicleAnnotation{
         let coordinate:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: (vehicle?.location?.latitude) ??  0.0   , longitude: (vehicle?.location?.longitude) ?? 0.0)
-        return VehicleAnnotation(name: (vehicle?.vehicleDetails?.name) ?? "", make: (vehicle?.vehicleDetails?.make) ?? "", color: (vehicle?.vehicleDetails?.color) ?? "", coordinate: coordinate)
+        return VehicleAnnotation(name: (vehicle?.vehicleDetails?.name) ?? "", make: (vehicle?.vehicleDetails?.make) ?? "", color: (vehicle?.vehicleDetails?.color) ?? "",carImageUrl:(vehicle?.carImageUrl) ?? "" , coordinate: coordinate)
     }
     weak var delegate: VehicleMapViewModelDelegate? = nil
     

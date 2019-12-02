@@ -14,11 +14,13 @@ class VehicleAnnotation: NSObject, MKAnnotation {
     let make: String
     let color: String
     let coordinate: CLLocationCoordinate2D
+    let carImageUrl:String
     
-    init(name: String, make: String, color: String, coordinate: CLLocationCoordinate2D) {
+    init(name: String, make: String, color: String,carImageUrl:String, coordinate: CLLocationCoordinate2D) {
         self.title = name
         self.make  = make
         self.color = color
+        self.carImageUrl = carImageUrl
         self.coordinate = coordinate
         
         super.init()
