@@ -10,11 +10,12 @@ import UIKit
 import MapKit
 class VehicleMapViewController: UIViewController {
 
-    @IBOutlet weak var mapView:MKMapView?
+    @IBOutlet weak var mapView:MKMapView!
     private(set) var viewModel = VehicleMapViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         addAnnotation()
+        mapView.showAnnotations(mapView.annotations, animated: true)
     }
     
     
@@ -49,6 +50,7 @@ extension VehicleMapViewController : MKMapViewDelegate{
             view.calloutOffset = CGPoint(x: -5, y: 5)
             view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
+        view.image = UIImage()
         return view
     }
 }
