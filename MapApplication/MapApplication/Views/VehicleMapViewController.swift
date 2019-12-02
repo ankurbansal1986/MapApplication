@@ -37,20 +37,26 @@ extension VehicleMapViewController : MKMapViewDelegate{
         guard let annotation = annotation as? VehicleAnnotation else { return nil }
        
         let identifier = "marker"
-        var view: MKMarkerAnnotationView
+        var view: MKAnnotationView
       
-        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-            as? MKMarkerAnnotationView {
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) {
             dequeuedView.annotation = annotation
             view = dequeuedView
         } else {
             // 5
-            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
-            view.calloutOffset = CGPoint(x: -5, y: 5)
+           
             view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            
         }
-        view.image = UIImage()
+        
+        if let cachedImage = AppDelegate.imageCache.object(forKey: annotation.carImageUrl as NSString) {
+            view.image = cachedImage
+           
+            
+        }
+        
         return view
     }
 }
