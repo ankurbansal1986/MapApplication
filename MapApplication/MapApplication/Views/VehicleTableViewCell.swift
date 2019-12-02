@@ -34,7 +34,6 @@ class VehicleTableViewCell: UITableViewCell {
     }
     
     func showData(mapModel:MapModel?){
-        printDebug("cell method called")
         guard let mapModel = mapModel else {
             return
         }
