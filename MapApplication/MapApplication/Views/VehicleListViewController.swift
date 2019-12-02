@@ -10,11 +10,19 @@ import UIKit
 
 class VehicleListViewController: UIViewController {
 
-    @IBOutlet weak var vehicleTableView: UITableView!
+    @IBOutlet weak var vehicleTableView: UITableView!  {
+        didSet {
+    vehicleTableView.estimatedRowHeight = UITableView.automaticDimension
+    vehicleTableView.rowHeight = UITableView.automaticDimension
+    vehicleTableView.register(UINib(nibName: VehicleTableViewCell.reusableIdentifier, bundle: nil), forCellReuseIdentifier: VehicleTableViewCell.reusableIdentifier)
+       }
+    }
+    
      private(set) var viewModel = VehicleListViewModel()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        registerCells()
         viewModel.delegate = self
         viewModel.vehicleData()
         
@@ -22,9 +30,7 @@ class VehicleListViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func registerCells(){
-         vehicleTableView.register(UINib(nibName: "VehicleTableViewCell", bundle: nil), forCellReuseIdentifier: "VehicleTableViewCell")
-    }
+    
 }
     
     //MARK:- Extension for table view data source and delegate methods
@@ -40,7 +46,7 @@ class VehicleListViewController: UIViewController {
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell:VehicleTableViewCell = tableView.dequeueReusableCell(withIdentifier: "VehicleTableViewCell", for: indexPath) as! VehicleTableViewCell
+            let cell:VehicleTableViewCell = tableView.dequeueReusableCell(withIdentifier: VehicleTableViewCell.reusableIdentifier, for: indexPath) as! VehicleTableViewCell
             
             cell.showData(mapModel: viewModel.vehicles![indexPath.row])
             
