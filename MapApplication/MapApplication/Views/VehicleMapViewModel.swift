@@ -7,3 +7,16 @@
 //
 
 import Foundation
+protocol VehicleMapViewModelDelegate: class {
+    func vehicleDataSuccess()
+    func vehicleDataFail()
+}
+class VehicleMapViewModel{
+     var vehicle: MapModel?
+    weak var delegate: VehicleMapViewModelDelegate? = nil
+    
+    func vehicleData(){
+        
+    }
+}
+

@@ -61,12 +61,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-200.00000000000003" y="-63.616071428571423"/>
+            <point key="canvasLocation" x="-210" y="-64"/>
         </scene>
         <!--Vehicle Map View Controller-->
         <scene sceneID="OeN-gO-bbJ">
             <objects>
-                <viewController id="RgO-CD-JtA" customClass="VehicleMapViewController" customModule="MapApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VehicleMapViewController" id="RgO-CD-JtA" customClass="VehicleMapViewController" customModule="MapApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lWG-bq-PLh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,9 @@
                         <viewLayoutGuide key="safeArea" id="rf8-VP-uhA"/>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="mapView" destination="Lqf-V6-PYq" id="w7p-eD-hxh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tbS-y5-CYP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

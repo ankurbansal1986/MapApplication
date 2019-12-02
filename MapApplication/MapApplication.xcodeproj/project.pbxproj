@@ -23,6 +23,7 @@
 		89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9185A2394E0D300862EFF /* VehicleMapViewModel.swift */; };
 		89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */; };
 		89D9185F2394E34C00862EFF /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */; };
+		89D91862239506C700862EFF /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D91861239506C700862EFF /* Navigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		89D9185A2394E0D300862EFF /* VehicleMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewModel.swift; sourceTree = "<group>"; };
 		89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
 		89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
+		89D91861239506C700862EFF /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		89D918172394CB1B00862EFF /* MapApplication */ = {
 			isa = PBXGroup;
 			children = (
+				89D918602395068300862EFF /* Navigation */,
 				89D9184B2394D46500862EFF /* Networking */,
 				89D918472394CE0400862EFF /* Models */,
 				89D918482394CE0400862EFF /* Views */,
@@ -174,6 +177,14 @@
 				89D9184E2394D6B200862EFF /* ServiceConstants.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		89D918602395068300862EFF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				89D91861239506C700862EFF /* Navigation.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				89D9181B2394CB1B00862EFF /* ViewController.swift in Sources */,
 				89D9184A2394CE5B00862EFF /* MapModel.swift in Sources */,
 				89D918512394D6B200862EFF /* Service.swift in Sources */,
+				89D91862239506C700862EFF /* Navigation.swift in Sources */,
 				89D918552394E09100862EFF /* VehicleListViewController.swift in Sources */,
 				89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */,
 				89D918572394E0A500862EFF /* VehicleMapViewController.swift in Sources */,
