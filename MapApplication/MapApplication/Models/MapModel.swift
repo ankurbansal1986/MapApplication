@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Vehicle:Codable{
    
@@ -43,8 +44,6 @@ struct Location:Codable{
 
 
 struct MapModel: Codable {
-    
-    
     let id: String?
     let modelIdentifier: String?
     let modelName: String?

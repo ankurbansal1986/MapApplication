@@ -15,6 +15,14 @@
 		89D9182E2394CB1E00862EFF /* MapApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9182D2394CB1E00862EFF /* MapApplicationTests.swift */; };
 		89D918392394CB1E00862EFF /* MapApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918382394CB1E00862EFF /* MapApplicationUITests.swift */; };
 		89D9184A2394CE5B00862EFF /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918492394CE5B00862EFF /* MapModel.swift */; };
+		89D918512394D6B200862EFF /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9184D2394D6B200862EFF /* Service.swift */; };
+		89D918522394D6B200862EFF /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9184E2394D6B200862EFF /* ServiceConstants.swift */; };
+		89D918552394E09100862EFF /* VehicleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918542394E09100862EFF /* VehicleListViewController.swift */; };
+		89D918572394E0A500862EFF /* VehicleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918562394E0A500862EFF /* VehicleMapViewController.swift */; };
+		89D918592394E0CA00862EFF /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D918582394E0CA00862EFF /* VehicleListViewModel.swift */; };
+		89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9185A2394E0D300862EFF /* VehicleMapViewModel.swift */; };
+		89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */; };
+		89D9185F2394E34C00862EFF /* VehicleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		89D918382394CB1E00862EFF /* MapApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApplicationUITests.swift; sourceTree = "<group>"; };
 		89D9183A2394CB1E00862EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		89D918492394CE5B00862EFF /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		89D9184D2394D6B200862EFF /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		89D9184E2394D6B200862EFF /* ServiceConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
+		89D918542394E09100862EFF /* VehicleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewController.swift; sourceTree = "<group>"; };
+		89D918562394E0A500862EFF /* VehicleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewController.swift; sourceTree = "<group>"; };
+		89D918582394E0CA00862EFF /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		89D9185A2394E0D300862EFF /* VehicleMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMapViewModel.swift; sourceTree = "<group>"; };
+		89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleTableViewCell.swift; sourceTree = "<group>"; };
+		89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,7 @@
 		89D918172394CB1B00862EFF /* MapApplication */ = {
 			isa = PBXGroup;
 			children = (
+				89D9184B2394D46500862EFF /* Networking */,
 				89D918472394CE0400862EFF /* Models */,
 				89D918482394CE0400862EFF /* Views */,
 				89D918182394CB1B00862EFF /* AppDelegate.swift */,
@@ -140,8 +157,23 @@
 		89D918482394CE0400862EFF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				89D918542394E09100862EFF /* VehicleListViewController.swift */,
+				89D918582394E0CA00862EFF /* VehicleListViewModel.swift */,
+				89D918562394E0A500862EFF /* VehicleMapViewController.swift */,
+				89D9185A2394E0D300862EFF /* VehicleMapViewModel.swift */,
+				89D9185C2394E2FB00862EFF /* VehicleTableViewCell.swift */,
+				89D9185E2394E34C00862EFF /* VehicleTableViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		89D9184B2394D46500862EFF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				89D9184D2394D6B200862EFF /* Service.swift */,
+				89D9184E2394D6B200862EFF /* ServiceConstants.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D9185F2394E34C00862EFF /* VehicleTableViewCell.xib in Resources */,
 				89D918232394CB1E00862EFF /* LaunchScreen.storyboard in Resources */,
 				89D918202394CB1E00862EFF /* Assets.xcassets in Resources */,
 				89D9181E2394CB1B00862EFF /* Main.storyboard in Resources */,
@@ -277,6 +310,13 @@
 			files = (
 				89D9181B2394CB1B00862EFF /* ViewController.swift in Sources */,
 				89D9184A2394CE5B00862EFF /* MapModel.swift in Sources */,
+				89D918512394D6B200862EFF /* Service.swift in Sources */,
+				89D918552394E09100862EFF /* VehicleListViewController.swift in Sources */,
+				89D9185B2394E0D300862EFF /* VehicleMapViewModel.swift in Sources */,
+				89D918572394E0A500862EFF /* VehicleMapViewController.swift in Sources */,
+				89D9185D2394E2FB00862EFF /* VehicleTableViewCell.swift in Sources */,
+				89D918592394E0CA00862EFF /* VehicleListViewModel.swift in Sources */,
+				89D918522394D6B200862EFF /* ServiceConstants.swift in Sources */,
 				89D918192394CB1B00862EFF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
