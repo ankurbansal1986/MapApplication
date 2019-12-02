@@ -22,8 +22,10 @@ class VehicleListViewModel{
     //MARK:- Fetch vehicle list
   
     func vehicleData() {
+        AppNavigationManager.shared.startLoading()
        _ = Service().makeHTTPRequest(path: scVehicle, httpRequestMethod: "GET", extraHeaders: nil, body: nil, success: {[weak self] (responseData:Data?) in
         
+        AppNavigationManager.shared.stopLoading()
         if(responseData != nil){
             do {
                 let vehicleList:[MapModel]? = try JSONDecoder().decode([MapModel].self, from: responseData!)
