@@ -14,12 +14,7 @@ class VehicleMapViewController: UIViewController {
     private(set) var viewModel = VehicleMapViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-      
-        viewModel.vehicleData()
-        
-        
-        // Do any additional setup after loading the view.
+        addAnnotation()
     }
     
     
@@ -32,27 +27,30 @@ class VehicleMapViewController: UIViewController {
 extension VehicleMapViewController : MKMapViewDelegate{
    
     func addAnnotation(){
-//        let annotation:MKAnnotation = MKAnnotation()
-//        annotation.title =
-//        london.title = "London"
-//        london.coordinate = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
-//        yourMapView.addAnnotation(london)
+        mapView?.addAnnotation(viewModel.vehicleAnnotation)
+
     }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        guard annotation is MKPointAnnotation else { return nil }
-        
-        let identifier = "Annotation"
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
-        
-        if annotationView == nil {
-            annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            annotationView!.canShowCallout = true
+       
+        guard let annotation = annotation as? VehicleAnnotation else { return nil }
+       
+        let identifier = "marker"
+        var view: MKMarkerAnnotationView
+      
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
         } else {
-            annotationView!.annotation = annotation
+            // 5
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -5, y: 5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
-        
-        return annotationView
+        return view
     }
-    
 }
+    
+
