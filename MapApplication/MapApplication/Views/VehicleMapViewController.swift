@@ -50,6 +50,7 @@ extension VehicleMapViewController : MKMapViewDelegate{
             view.calloutOffset = CGPoint(x: -5, y: 5)
             view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
+        view.image = UIImage()
         return view
     }
 }
