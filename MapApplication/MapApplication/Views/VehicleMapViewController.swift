@@ -10,11 +10,12 @@ import UIKit
 import MapKit
 class VehicleMapViewController: UIViewController {
 
-    @IBOutlet weak var mapView:MKMapView?
+    @IBOutlet weak var mapView:MKMapView!
     private(set) var viewModel = VehicleMapViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         addAnnotation()
+        mapView.showAnnotations(mapView.annotations, animated: true)
     }
     
     
