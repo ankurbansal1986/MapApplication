@@ -13,10 +13,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     static let shared = UIApplication.shared.delegate as! AppDelegate
-
+    //MARK:  image download with cache.
+     static let imageCache = NSCache<NSString, UIImage>()
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       
+        AppDelegate.imageCache.totalCostLimit = 10 * 1024 * 1024 // Here the size in bytes of data is used as the cost, here 10 MB limit
+        AppDelegate.imageCache.countLimit = 100 // 100 url limit
         
         return true
     }

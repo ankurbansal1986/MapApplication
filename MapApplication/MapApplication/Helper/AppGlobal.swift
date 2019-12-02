@@ -32,11 +32,10 @@ extension UITableViewCell {
 
 
 //MARK:  image download with cache.
-private let imageCache = NSCache<NSString, UIImage>()
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: UIView.ContentMode = .scaleAspectFit) {
         
-        if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) {
+        if let cachedImage = AppDelegate.imageCache.object(forKey: url.absoluteString as NSString) {
             DispatchQueue.main.async() {
                 self.image = cachedImage
             }
@@ -52,7 +51,7 @@ extension UIImageView {
                 let image = UIImage(data: data)
                 else { return }
             
-            imageCache.setObject(image, forKey: url.absoluteString as NSString)
+            AppDelegate.imageCache.setObject(image, forKey: url.absoluteString as NSString)
             DispatchQueue.main.async() {
                 self.image = image
             }
